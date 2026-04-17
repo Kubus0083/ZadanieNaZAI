@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>RetroZone – Koszyk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Twój koszyk w RetroZone – podsumowanie zakupów retro konsol i gier.">
+  <meta name="keywords" content="koszyk, retrozone, zakupy, NES, Sega">
+  <meta property="og:title" content="RetroZone – Koszyk">
+  <meta property="og:description" content="Twój koszyk (2 produkty) – NES Classic Edition i Sonic the Hedgehog.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,11 +55,16 @@
       <div class="cart-info">
         <h3>NES Classic Edition</h3>
         <p class="price">399 zł</p>
+
         <div class="quantity-control">
-          <button class="qty-btn">-</button>
-          <input type="number" value="1" min="1" class="qty-input">
-          <button class="qty-btn">+</button>
+          <button class="qty-btn" aria-label="Zmniejsz ilość">-</button>
+
+          <label for="qty-1" class="sr-only">Ilość dla NES Classic Edition</label>
+          <input type="number" id="qty-1" value="1" min="1" class="qty-input" aria-label="Ilość">
+
+          <button class="qty-btn" aria-label="Zwiększ ilość">+</button>
         </div>
+
         <button class="remove-btn">🗑 Usuń</button>
       </div>
       <div class="item-total">399 zł</div>
@@ -64,11 +75,16 @@
       <div class="cart-info">
         <h3>Sonic the Hedgehog (Sega)</h3>
         <p class="price">119 zł</p>
+
         <div class="quantity-control">
-          <button class="qty-btn">-</button>
-          <input type="number" value="1" min="1" class="qty-input">
-          <button class="qty-btn">+</button>
+          <button class="qty-btn" aria-label="Zmniejsz ilość">-</button>
+
+          <label for="qty-2" class="sr-only">Ilość dla Sonic the Hedgehog</label>
+          <input type="number" id="qty-2" value="1" min="1" class="qty-input" aria-label="Ilość">
+
+          <button class="qty-btn" aria-label="Zwiększ ilość">+</button>
         </div>
+
         <button class="remove-btn">🗑 Usuń</button>
       </div>
       <div class="item-total">119 zł</div>

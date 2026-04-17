@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>RetroZone – Logowanie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zaloguj się do konta RetroZone i zarządzaj zamówieniami.">
+  <meta name="keywords" content="logowanie, retrozone, konto, sklep retro">
+  <meta property="og:title" content="RetroZone – Logowanie">
+  <meta property="og:description" content="Zaloguj się do RetroZone.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,12 +45,12 @@
   <a href="products.html">Kolekcjonerskie</a>
 </nav>
 
-<main style="max-width:420px;margin:60px auto;background:#1f2833;padding:40px;border-radius:8px;">
+<main class="auth-container">
   <h2 style="text-align:center;margin-bottom:30px;">Zaloguj się</h2>
   <form>
-    <label>Email<br><input type="email" required style="width:100%;padding:12px;margin:8px 0 20px;"></label>
-    <label>Hasło<br><input type="password" required style="width:100%;padding:12px;margin:8px 0 20px;"></label>
-    <button type="submit" class="btn" style="width:100%;padding:14px;font-size:17px;">Zaloguj się</button>
+    <label>Email<br><input type="email" required class="form-input"></label>
+    <label>Hasło<br><input type="password" required class="form-input"></label>
+    <button type="submit" class="btn auth-btn">Zaloguj się</button>
   </form>
   <p style="text-align:center;margin-top:25px;">
     Nie masz konta? <a href="register.html" style="color:#66fcf1;">Zarejestruj się</a>
