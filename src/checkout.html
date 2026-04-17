@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>RetroZone – Zamówienie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+
+<header>
+  <a href="index.html" class="logo">RetroZone</a>
+  <div class="search-box">
+    <select aria-label="Kategoria">
+      <option>Wszystkie kategorie</option>
+      <option>Konsole retro</option>
+      <option>Gry</option>
+      <option>Akcesoria</option>
+      <option>Nowości</option>
+      <option>Promocje</option>
+      <option>Kolekcjonerskie</option>
+    </select>
+    <input type="text" placeholder="Szukaj konsoli, gry lub akcesoriów..." aria-label="Szukaj">
+    <button>Szukaj</button>
+  </div>
+  <div class="header-links">
+    <a href="login.html">Moje konto</a>
+    <a href="#">Zamówienia</a>
+    <a href="cart.html">Koszyk (2)</a>
+  </div>
+</header>
+
+<nav>
+  <a href="products.html">Konsole retro</a>
+  <a href="products.html">Gry</a>
+  <a href="products.html">Akcesoria</a>
+  <a href="products.html">Nowości</a>
+  <a href="products.html">Promocje</a>
+  <a href="products.html">Kolekcjonerskie</a>
+</nav>
+
+<section class="section">
+  <h2>Finalizacja zamówienia</h2>
+  <div class="checkout-container">
+    <div class="checkout-box">
+      <h3>Dane klienta</h3>
+      <label>Imię i nazwisko:<br><input type="text" placeholder="Jan Kowalski"></label>
+      <label>Adres:<br><input type="text" placeholder="ul. Retro 12/3"></label>
+      <label>Kod pocztowy:<br><input type="text" placeholder="00-000"></label>
+      <label>Miasto:<br><input type="text" placeholder="Warszawa"></label>
+      <label>Telefon:<br><input type="text" placeholder="123 456 789"></label>
+      <label>Email:<br><input type="email" placeholder="jan@example.com"></label>
+    </div>
+
+    <div class="checkout-box">
+      <h3>Metoda dostawy</h3>
+      <label><input type="radio" name="delivery" checked> Kurier – 15 zł</label>
+      <label><input type="radio" name="delivery"> Paczkomat – 12 zł</label>
+      <label><input type="radio" name="delivery"> Odbiór osobisty – 0 zł</label>
+    </div>
+
+    <div class="checkout-box">
+      <h3>Metoda płatności</h3>
+      <label><input type="radio" name="payment" checked> Karta płatnicza</label>
+      <label><input type="radio" name="payment"> BLIK</label>
+      <label><input type="radio" name="payment"> Przelew tradycyjny</label>
+    </div>
+
+    <div class="checkout-summary">
+      <h3>Podsumowanie</h3>
+      <p>Produkty: <strong>518 zł</strong></p>
+      <p>Dostawa: <strong>15 zł</strong></p>
+      <p class="summary-total">Razem: <strong>533 zł</strong></p>
+      <button class="btn checkout-btn">Zamawiam i płacę</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 RetroZone – wszystkie prawa zastrzeżone.
+</footer>
 </body>
 </html>

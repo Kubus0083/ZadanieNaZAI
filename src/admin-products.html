@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Panel admina – Produkty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+
+<header class="admin-header">
+  <a href="index.html" class="logo">RetroZone – Admin</a>
+  <nav class="admin-nav">
+    <a href="admin-products.html" class="active">Produkty</a>
+    <a href="admin-orders.html">Zamówienia</a>
+    <a href="admin-add.html">Dodaj produkt</a>
+  </nav>
+  <a href="index.html" class="btn admin-btn">Przejdź do sklepu</a>
+</header>
+
+<section class="section">
+  <h2>Zarządzanie produktami</h2>
+  <a href="admin-add.html" class="btn admin-btn">+ Dodaj nowy produkt</a>
+
+  <table class="admin-table">
+    <tr><th>ID</th><th>Nazwa</th><th>Cena</th><th>Ilość</th><th>Akcje</th></tr>
+    <tr>
+      <td>1</td>
+      <td>NES Classic Edition</td>
+      <td>399 zł</td>
+      <td>12</td>
+      <td class="admin-actions-cell">
+        <a href="admin-edit.html" class="table-btn edit">Edytuj</a>
+        <a href="#" class="table-btn delete">Usuń</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Sega Mega Drive Mini</td>
+      <td>449 zł</td>
+      <td>8</td>
+      <td class="admin-actions-cell">
+        <a href="admin-edit.html" class="table-btn edit">Edytuj</a>
+        <a href="#" class="table-btn delete">Usuń</a>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<footer>Panel administratora RetroZone</footer>
 </body>
 </html>

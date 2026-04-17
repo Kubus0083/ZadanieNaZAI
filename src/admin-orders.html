@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel admina – Zamówienia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <a href="index.html" class="logo">RetroZone – Admin</a>
+  <nav class="admin-nav">
+    <a href="admin-products.html">Produkty</a>
+    <a href="admin-orders.html" class="active">Zamówienia</a>
+    <a href="admin-add.html">Dodaj produkt</a>
+  </nav>
+  <a href="index.html" class="btn admin-btn">Przejdź do sklepu</a>
+</header>
+
+<section class="section">
+  <h2>Zarządzanie zamówieniami</h2>
+  <table class="admin-table">
+    <tr><th>ID zamówienia</th><th>Klient</th><th>Data</th><th>Kwota</th><th>Status</th><th>Akcje</th></tr>
+    <tr><td>101</td><td>Jan Kowalski</td><td>2026-03-12</td><td>533 zł</td><td>W realizacji</td><td><button class="table-btn edit">Zmień status</button></td></tr>
+    <tr><td>102</td><td>Anna Nowak</td><td>2026-03-13</td><td>299 zł</td><td>Wysłane</td><td><button class="table-btn edit">Zmień status</button></td></tr>
+  </table>
+</section>
+
+<footer>Panel administratora RetroZone</footer>
+</body>
+</html>

@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Panel admina – Dodaj produkt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+
+<header class="admin-header">
+  <a href="index.html" class="logo">RetroZone – Admin</a>
+  <nav class="admin-nav">
+    <a href="admin-products.html">Produkty</a>
+    <a href="admin-orders.html">Zamówienia</a>
+    <a href="admin-add.html" class="active">Dodaj produkt</a>
+  </nav>
+  <a href="index.html" class="btn admin-btn">Przejdź do sklepu</a>
+</header>
+
+<section class="section">
+  <h2>Dodawanie produktu</h2>
+  <form class="admin-form">
+    <label>Nazwa produktu:<br><input type="text" placeholder="np. NES Classic Edition"></label>
+    <label>Opis:<br><textarea placeholder="Opis produktu" rows="4"></textarea></label>
+    <label>Cena (zł):<br><input type="number" placeholder="399"></label>
+    <label>Kategoria:<br>
+      <select><option>Konsole</option><option>Gry</option><option>Akcesoria</option></select>
+    </label>
+    <label>Ilość:<br><input type="number" placeholder="10"></label>
+    <label>Zdjęcie:<br><input type="file"></label>
+    <div class="admin-actions">
+      <a href="admin-products.html" class="btn admin-btn">Zapisz produkt</a>
+      <a href="admin-products.html" class="btn cancel-btn">Anuluj</a>
+    </div>
+  </form>
+</section>
+
+<footer>Panel administratora RetroZone</footer>
 </body>
 </html>
