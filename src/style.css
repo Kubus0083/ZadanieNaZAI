@@ -127,12 +127,12 @@ nav a {
     font-weight: bold;
 }
 
-.section {
+main {
     margin: 20px;
     flex: 1;
 }
 
-.section h2 {
+main h2 {
     margin-bottom: 15px;
 }
 
@@ -231,7 +231,11 @@ footer {
 }
 
 .table-btn {
+    
+    justify-content: center;
+    float: right;
     padding: 6px 12px;
+    
     border-radius: 4px;
     text-decoration: none;
     color: #fff;
@@ -243,6 +247,7 @@ footer {
 }
 
 .table-btn.delete {
+    
     background: #c0392b;
 }
 
