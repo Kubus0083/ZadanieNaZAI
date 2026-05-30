@@ -623,3 +623,57 @@ footer {
         font-size: 14px;
     }
 }
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track .product {
+    flex: 0 0 auto;
+    width: 220px;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 10px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-color: #bbb;
+}
+
+.carousel-btn.prev {
+    left: -15px;
+}
+
+.carousel-btn.next {
+    right: -15px;
+}
